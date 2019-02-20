@@ -175,7 +175,7 @@ class PrivateRecipeApiTests(TestCase):
         self.assertIn(new_tag, tags)
 
     def test_full_update_recipe(self):
-    """Test updating a recipe with put"""
+        """Test updating a recipe with put"""
         recipe = sample_recipe(user=self.user)
         recipe.tags.add(sample_tag(user=self.user))
 
